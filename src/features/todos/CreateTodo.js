@@ -13,7 +13,9 @@ function CreateTodo() {
   function handleSubmit(event) {
     event.preventDefault();
     dispatch(todoAdded(text));
-  }
+    setText("");
+  } 
+  
 
   return (
     <div>
